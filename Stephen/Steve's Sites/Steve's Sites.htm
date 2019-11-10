@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/ico" href="Fish.png"/>
+
+<style>
+  body {
+      cursor: url(Orangey-Normal%20Select.cur), default; 
+      
+      background-color:orange
+  }
+  body {font-family: "Arial", sans-serif;}
+  body {background-color:orange}
+  header {background-color:#FFB733}
+  footer {background-color:#E69400}
+  h1   {color:blue}
+  h2   {color:blue}
+  h3   {color:blue}
+  h4   {color:blue}
+  h5   {color:darkblue}
+  p    {color:darkblue}
+</style>
+<title>Steve's Sites</title>
+<p id="browser"></p>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<span id="browserq"></span>
+<script>
+var link = document.createElement('a');
+link.textContent = 'What does this mean?';
+link.href = 'http://www.w3schools.com/js/js_window_navigator.asp';
+document.getElementById('browserq').appendChild(link);
+document.getElementById("browser").innerHTML =
+"Browser name is " + navigator.appName + " Code name is " + navigator.appCodeName + " Language is " + navigator.language + " JavaScript Detected" ;
+</script>
+</head>
+<header>
+<h1>Steve's Sites</h1>
+<h2>By Stephen H</h3>
+<h4><i>With Help From The JAS Team</h4>
+<h5>(Jishnu, Austine, Stephen)</i></h5>
+<hr>
+</header>
+<body>
+<h3>Steve's Utilities: <a href="http://j.mp/jas-s-utilities">
+  j.mp/jas-s-utilities</a></h3><p>Steve's Utilities has Web utilities that Steve has made.</p>
+<h3>Steve's Time Checker: <a href="http://j.mp/jas-timechecker">
+  j.mp/jas-timechecker</a></h3><h4>Steve's Time Checker Change Log: <a href="http://j.mp/jas-timechecker-changelog">
+  j.mp/jas-timechecker-changelog</a></h4><p>Steve's Time Checker has the first Web utility that Steve has made.<br>Steve's Time Checker is also on <a href="http://j.mp/jas-utilities">Steve's Utilities</a></p><p id="time"></p>
+<script>
+document.getElementById("time").innerHTML = "(Steve's Time Checker tells the time in this format: " + Date() + " )";
+</script>
+<h3>Steve's Fish Checklist: <a href="http://j.mp/jas-fishchecklist">
+  j.mp/jas-fishchecklist</a></h3><p>Steve's Fish Checklist will teach you how to get started with a fish and what you do to look after it.</p>
+<h3>Steve's Youtube Status: <a href="http://j.mp/steve-ytstatus">
+  j.mp/steve-ytstatus</a> Or <a href="http://j.mp/stevesstatus">
+  j.mp/stevesstatus</a></h3>
+</body>
+<footer><p>Please help me win some internets</p>
+<a href='http://internetometer.com/give/44939'><img src='http://internetometer.com/image/44939.png'/></a>
+</html>

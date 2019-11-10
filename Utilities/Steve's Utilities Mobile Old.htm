@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<link rel="icon" type="image/ico" href="icon.png"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+<title>Steve's Utilities</title>
+<style>
+.ui-bar-s {
+    color: blue;
+    background-color: #FFB733;
+}
+
+.ui-body-s {
+    color: blue;
+    background-color: orange;
+}
+.ui-footer-s {
+    color: blue;
+    background-color: #E69400;
+
+.ui-page-theme-s {
+    color: blue;
+    background-color: orange;
+}
+  div {background-color:orange}
+  h1   {color:blue}
+  h2   {color:blue}
+  h3   {color:blue}
+  h4   {color:blue}
+  h5   {color:darkblue}
+  p    {color:darkblue}
+</style>
+
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+  <!-- Include the jQuery library -->
+  <script src="jquery-1.11.2.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+<div data-role="page" data-theme="s">
+  <div data-role="header" data-theme="s">
+    <h1>Steve's Utilities</h1><h2><br><a href="#about">By Stephen H<br><i>With Help From The <abbr title="Jishnu, Amazor (Austine), Stephen">JΛS</abbr> Team</i></a></h2><title>Steve's Utilities</title>
+  </div>
+
+  <div data-role="main" class="ui-content ui-body-s">
+    <noscript>Some "Utilities" Requires JavaScript</noscript>
+<h3>Time Checker</h3>
+<p>As on<a href="http://j.mp/jas-timechecker">
+  j.mp/jas-timechecker</a></p>
+<p id="time"></p>
+<script>
+document.getElementById("time").innerHTML = Date();
+</script>
+<button type="button"
+onclick="document.getElementById('time').innerHTML = Date()">
+Update Time</button>
+<hr size="1">
+<h3>Flashlight</h3>
+<img id="bulb" onclick="changeImage()" src="http://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180">
+<p>Click the light bulb to turn On/Off the light</p>
+<script>
+function changeImage() {
+    var image = document.getElementById('bulb');
+    if (image.src.match("bulbon")) {
+        image.src = "http://www.w3schools.com/js/pic_bulboff.gif";
+    } else {
+        image.src = "http://www.w3schools.com/js/pic_bulbon.gif";
+    }
+}
+</script>
+<hr size="1">
+<h3>Steve's YouTube Status</h3>
+<p>As On<a href="http://j.mp/stevesstatus">
+  j.mp/stevesstatus</a></p>
+<img src="Status.png" alt="status" style="width:375px;height:250px">
+<hr size="1">
+<h3>TAPPED!!!<h4>Exclusive to Mobile Devices<h4><h3>
+<iframe width="100%" src="tapped.htm" name="tapped" scrolling="no" seamless="seamless" style="border:none"></iframe>
+<hr size="1">
+<h3>Screen Resolution (Beta)</h3>
+<p id="resolution"></p>
+<script>
+document.getElementById("resolution").innerHTML = 
+"Your Computers Screen Resolution is " + screen.width + " x " + screen.height + " Your Available Screen Resolution is " + screen.availWidth + " x " + screen.availHeight + " Your Screen Colour Depth is " + screen.colorDepth + " Your Screen Pixel Depth is " + screen.pixelDepth ;
+</script>
+<hr size="1">
+<h3>Browser info (Alpha)</h3>
+<p id="browser"></p>
+
+<p><u>IE11, Chrome, Firefox, and Safari return appName "Netscape"<br>Chrome, Firefox, IE, Safari, and Opera all return appCodeName "Mozilla"</u><p>
+
+<script>
+// Browser Stuff
+/*
+IE11, Chrome, Firefox, and Safari return appName "Netscape"
+Chrome, Firefox, IE, Safari, and Opera all return appCodeName "Mozilla"
+*/
+document.getElementById("browser").innerHTML =
+"Browser name is " + navigator.appName + " Code name is " + navigator.appCodeName + " Language is " + navigator.language + " JavaScript Detected" ;
+// Head Browser
+document.getElementById("headbrowser").innerHTML =
+"Browser name is " + navigator.appName + " Code name is " + navigator.appCodeName + " Language is " + navigator.language + " JavaScript Detected" ;
+</script>
+<hr size="1">
+<h2>Web pages</h2>
+<h3>Austine's Animations</h3>
+<iframe width="100%" height="950px" src="Austine's%20Animations.htm" name="Austines-Animations"></iframe>
+<hr size="1">
+<h3>Jishi's Morse Code</h3>
+<iframe width="100%" height="950px" src="Morse%20Code.htm" name="Jishi's-Morse_Code"></iframe>
+<hr>
+  </div>
+
+  <div data-role="footer" data-theme="s">
+    <p>JAS Team Email: <a href="mailto:jas578578@gmail.com">
+  jas578578@gmail.com</a></p>
+<p>Steve's Email: <a href="mailto:supercomputer008@gmail.com">
+  supercomputer008@gmail.com</a></p>
+<p>Jishnu's Email: <a href="mailto:jasteamjishi@gmail.com">
+  jasteamjishi@gmail.com</a></p>
+<p>Austine's Email: <a href="mailto:austine333.pott@gmail.com">
+  austine333.pott@gmail.com</a></p>
+
+<p>Friends Websites: <a href="http://www.coolbeansfilms.net">
+coolbeansfilms.net</a>&nbsp&nbsp&nbsp&nbsp&nbsp<a href="http://everythingpro.weebly.com">
+everythingpro.weebly.com</a>&nbsp&nbsp&nbsp&nbsp&nbsp<a href="http://everythinglite.weebly.com">
+everythinglite.weebly.com</a><p><b>Share This Site</b></p>
+<a href="qrcode.png" alt="qrcode" style="width:100px;height:100px"></a>
+<p><a href="http://j.mp/jas-utilities">
+  j.mp/jas-utilities</a></p><p>Bookmark this page <a href="http://j.mp/jas-utilities">Steve's Utilities</a><p>Drag this hyperlink onto your browser's Bookmarks Bar and you'll be ready to roll...</p>
+<p><a href="Steve's%20Utilities%20-%20Home.htm">
+  Desktop Site</a></p>
+  </div>
+</div> 
+
+<div data-role="page" data-dialog="true" id="about">
+  <div data-role="header">
+    <h1>About</h1>
+  </div>
+<title>Steve's Utilities - About</title>
+  <div data-role="main" class="ui-content">
+    <h3>Emails</h3>
+<p>Steve Tech's Email: <a href="mailto:supercomputer008@gmail.com">
+  supercomputer008@gmail.com</a></p>
+<p>Steve Playz's Email: <a href="mailto:steve8plays@gmail.com">
+  steve8plays@gmail.com</a></p>
+<p>JAS Team Email: <a href="mailto:jas578578@gmail.com">
+  jas578578@gmail.com</a></p>
+<p>Steve's Email: <a href="mailto:supercomputer008@gmail.com">
+  supercomputer008@gmail.com</a></p>
+<p>Jishnu's Email: <a href="mailto:jasteamjishi@gmail.com">
+  jasteamjishi@gmail.com</a></p>
+<p>Austine's Email: <a href="mailto:austine333.pott@gmail.com">
+  austine333.pott@gmail.com</a></p>
+<h3>Websites</h3>
+<p>Steve's Websites: <br>Steve's Sites: <a href="http://j.mp/jas-stevessites">
+  j.mp/jas-stevessites</a>,
+Steve's Utilities: <a href="http://j.mp/jas-utilities">
+  j.mp/jas-utilities</a>,
+Steve's Time Checker: <a href="http://j.mp/jas-timechecker">
+  j.mp/jas-timechecker</a>,
+Steve's Fish Checklist: <a href="http://j.mp/jas-fishchecklist">
+  j.mp/jas-fishchecklist</a>,
+Steve's Youtube Status: <a href="http://j.mp/steve-ytstatus">
+  j.mp/steve-ytstatus</a>,
+<p>JAS Websites: <a href="http://j.mp/jas-morse_code">
+Jishi's Morse Code</a>
+</p><p>Friends Websites: <a href="http://www.coolbeansfilms.net">
+coolbeansfilms.net</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://everythingpro.weebly.com">
+everythingpro.weebly.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://everythinglite.weebly.com">
+everythinglite.weebly.com</a></p>
+<h3>YouTube</h3>
+<p>JAS Team Channel: <a href="https://www.youtube.com/channel/UCRXBLONl2QstX7K4PgLH71w">JAS Team</a></p>
+<p>Steve's Channels: <a href="https://www.youtube.com/channel/UCnnC-n8k_Yz_FpDlhL9YOGg">
+Steve Playz</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCWnL6Kgzy4tqxtxho6wiTtw">
+Steve Tech</a></p>
+<p>Friends Channels: <a href="https://www.youtube.com/channel/UC2_Dyjsc3Sgqfc03skAxqzg">
+lochieplayz</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCXD_qKydEULoIYp8fM2airg">
+CoolBeans Films</a></p>
+<hr size="1"><a href="Bit.ly%20Website.png" alt="about-qrcode" style="width:150px;height:150px"></a>
+  </div>
+
+  <div data-role="footer">
+<p>Bookmark this page <a href="http://j.mp/jas-utilities">Steve's Utilities</a><p>Drag this hyperlink onto your browser's Bookmarks Bar and you'll be ready to roll...</p>
+  </div>
+</div> 
+
+</body>
+</html>

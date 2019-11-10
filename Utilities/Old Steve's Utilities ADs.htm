@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/ico" href="icon.png"/>
+<style>
+  body {background-color:orange}
+  body {font-family: "Arial", sans-serif;}
+  header {background-color:#FFB733}
+  footer {background-color:#E69400}
+  h1   {color:blue}
+  h2   {color:blue}
+  h3   {color:blue}
+  h4   {color:blue}
+  h5   {color:darkblue}
+  p    {color:darkblue}
+</style>
+<title>Steve's - Utilities</title>
+<p id="headbrowser"></p>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<span id="browserq"></span>
+<script>
+var link = document.createElement('a');
+link.textContent = 'What does this mean?';
+link.href = 'http://www.w3schools.com/js/js_window_navigator.asp';
+document.getElementById('browserq').appendChild(link);
+</script>
+</head>
+<hr>
+<header>
+<p>Advertisement&nbsp&nbsp&nbsp&nbsp&nbsp<a href="Old%20Steve's%20Utilities.htm">
+  [Hide]</a></p><iframe src="JAS-Stephen%20H.gif" width="500" height="150" style="border:none"></iframe><hr>
+</p><button onclick="myFunction()">Name</button><p id="name">
+<noscript>"Name" Requires JavaScript</noscript>
+
+<script>
+function myFunction() {
+    var person = prompt("Please enter your name", "");
+    
+    if (person != null) {
+        document.getElementById("name").innerHTML =
+        "Hello " + person + "!";
+    }
+}
+</script>
+<hr>
+<h1>Steve's Utilities</h1>
+<h3>By Stephen H</h3>
+<h4><i>With Help From The JAS Team</h4>
+<h5>(Jishnu, Austine, Stephen)</i></h5>
+</header>
+<body>
+<noscript>Some "Utilities" Requires JavaScript</noscript>
+<hr>
+<h3>Time Checker</h3>
+<p id="time"></p>
+<script>
+document.getElementById("time").innerHTML = Date();
+</script>
+<button type="button"
+onclick="document.getElementById('time').innerHTML = Date()">
+Update Time</button>
+<p>As on<a href="http://j.mp/jas-timechecker">
+  j.mp/jas-timechecker</a></p>
+<hr>
+<h3>Flashlight</h3>
+<img id="bulb" onclick="changeImage()" src="http://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180">
+<p>Click the light bulb to turn <button type="button" onclick="changeImage()" src="http://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180">On/Off</button> the light</p>
+<script>
+function changeImage() {
+    var image = document.getElementById('bulb');
+    if (image.src.match("bulbon")) {
+        image.src = "http://www.w3schools.com/js/pic_bulboff.gif";
+    } else {
+        image.src = "http://www.w3schools.com/js/pic_bulbon.gif";
+    }
+}
+</script>
+<hr>
+<h3>Steve's YouTube Status</h3>
+<p>As On <a href="http://j.mp/steve-ytstatus">
+  j.mp/steve-ytstatus</a> Or <a href="http://j.mp/stevesstatus">
+  j.mp/stevesstatus</a></p>
+<img src="Status.png" alt="status" style="width:375px;height:250px">
+<hr>
+<h3>Screen Resolution (Beta)</h3>
+<p id="resolution"></p>
+
+<script>
+document.getElementById("resolution").innerHTML = 
+"Your Computers Screen Resolution is " + screen.width + " x " + screen.height + " Your Available Screen Resolution is " + screen.availWidth + " x " + screen.availHeight + " Your Screen Colour Depth is " + screen.colorDepth + " Your Screen Pixel Depth is " + screen.pixelDepth ;
+</script>
+<hr>
+<h3>Browser info (Alpha)</h3>
+<p id="browser"></p>
+
+<p><u>IE11, Chrome, Firefox, and Safari return appName "Netscape"<br>Chrome, Firefox, IE, Safari, and Opera all return appCodeName "Mozilla"</u><p>
+
+<script>
+// Browser Stuff
+/*
+IE11, Chrome, Firefox, and Safari return appName "Netscape"
+Chrome, Firefox, IE, Safari, and Opera all return appCodeName "Mozilla"
+*/
+document.getElementById("browser").innerHTML =
+"Browser name is " + navigator.appName + " Code name is " + navigator.appCodeName + " Language is " + navigator.language + " JavaScript Detected" ;
+// Head Browser
+document.getElementById("headbrowser").innerHTML =
+"Browser name is " + navigator.appName + " Code name is " + navigator.appCodeName + " Language is " + navigator.language + " JavaScript Detected" ;
+</script>
+<hr>
+<h3>Austine's Animations</h3>
+<iframe width="100%" height="950px" src="Austine's%20Animations.htm" name="Austines-Animations"></iframe>
+<hr>
+<h3>Jishi's Morse Code</h3>
+<iframe width="100%" height="950px" src="Morse%20Code.htm" name="Jishi's-Morse_Code"></iframe>
+<hr>
+</body>
+<p>Advertisement&nbsp&nbsp&nbsp&nbsp&nbsp<a href="Old%20Steve's%20Utilities">
+  [Hide]</a></p><iframe src="Meet%20the%20JAS%20Team.gif" width="640" height="360" style="border:none"></iframe><hr>
+<footer>
+<p>JAS Team Email: <a href="mailto:jas578578@gmail.com">
+  jas578578@gmail.com</a></p>
+<p>Steve's Email: <a href="mailto:supercomputer008@gmail.com">
+  supercomputer008@gmail.com</a></p>
+<p>Jishnu's Email: <a href="mailto:jasteamjishi@gmail.com">
+  jasteamjishi@gmail.com</a></p>
+<p>Austine's Email: <a href="mailto:austine333.pott@gmail.com">
+  austine333.pott@gmail.com</a></p>
+
+<p>Friends Websites: <a href="http://www.coolbeansfilms.net">
+coolbeansfilms.net</a>&nbsp&nbsp&nbsp&nbsp&nbsp<a href="http://everythingpro.weebly.com">
+everythingpro.weebly.com</a>&nbsp&nbsp&nbsp&nbsp&nbsp<a href="http://everythinglite.weebly.com">
+everythinglite.weebly.com</a></p>
+
+<p><b>Share This Site</b></p>
+<a href="qrcode.png" alt="qrcode" style="width:100px;height:100px"></a>
+<p><a href="http://j.mp/jas-utensils">
+  j.mp/jas-utilities</a></p>
+</footer>
+</html> 

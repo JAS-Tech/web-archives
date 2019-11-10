@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<script src="jquery-1.11.2.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).on("pageinit",function(event){
+  $(".touch").on("tap",function(event){
+    $(".text").html("<span>Tapped!</span>").css({"color":"blue","font-size":"500%","text-align":"center"});                 
+  });
+  $(".touch").on("swipeleft",function(event){
+    $(".text").html("<span>Swiped Left!</span>").css({"color":"blue","font-size":"500%","text-align":"center"});               
+  });  
+  $(".touch").on("swiperight",function(event){
+    $(".text").html("<span>Swiped Right!</span>").css({"color":"blue","font-size":"500%","text-align":"center"});                     
+  }); 
+});
+</script>
+<style>
+div
+{
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+  p    {color:darkblue}
+</style>
+</head>
+<body>
+
+<div data-role="page" data-theme="d">
+  <div data-role="main" class="ui-content">
+    <div class="touch">
+      <div class="text" style="text-align:center;border:1px solid black;height:100px;"><br><br>Tap and/or swipe in this box</div>
+    </div>
+  </div>
+</div> 
+
+</body>
+</html>

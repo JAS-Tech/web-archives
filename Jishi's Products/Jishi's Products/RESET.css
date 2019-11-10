@@ -1,0 +1,156 @@
+.reset {
+	margin: 0px; padding: 0px;
+}
+.reset div {
+	margin: 0px; padding: 0px;
+}
+.reset dl {
+	margin: 0px; padding: 0px;
+}
+.reset dt {
+	margin: 0px; padding: 0px;
+}
+.reset dd {
+	margin: 0px; padding: 0px;
+}
+.reset ul {
+	margin: 0px; padding: 0px;
+}
+.reset ol {
+	margin: 0px; padding: 0px;
+}
+.reset li {
+	margin: 0px; padding: 0px;
+}
+.reset h1 {
+	margin: 0px; padding: 0px;
+}
+.reset h2 {
+	margin: 0px; padding: 0px;
+}
+.reset h3 {
+	margin: 0px; padding: 0px;
+}
+.reset h4 {
+	margin: 0px; padding: 0px;
+}
+.reset h5 {
+	margin: 0px; padding: 0px;
+}
+.reset h6 {
+	margin: 0px; padding: 0px;
+}
+.reset pre {
+	margin: 0px; padding: 0px;
+}
+.reset form {
+	margin: 0px; padding: 0px;
+}
+.reset fieldset {
+	margin: 0px; padding: 0px;
+}
+.reset input {
+	margin: 0px; padding: 0px;
+}
+.reset textarea {
+	margin: 0px; padding: 0px;
+}
+.reset p {
+	margin: 0px; padding: 0px;
+}
+.reset blockquote {
+	margin: 0px; padding: 0px;
+}
+.reset th {
+	margin: 0px; padding: 0px;
+}
+.reset td {
+	margin: 0px; padding: 0px;
+}
+.reset table {
+	border-collapse: collapse; border-spacing: 0;
+}
+.reset fieldset {
+	border: 0px currentColor; border-image: none;
+}
+.reset img {
+	border: 0px currentColor; border-image: none;
+}
+.reset address {
+	font-style: normal; font-weight: normal;
+}
+.reset caption {
+	font-style: normal; font-weight: normal;
+}
+.reset cite {
+	font-style: normal; font-weight: normal;
+}
+.reset code {
+	font-style: normal; font-weight: normal;
+}
+.reset dfn {
+	font-style: normal; font-weight: normal;
+}
+.reset em {
+	font-style: normal; font-weight: normal;
+}
+.reset strong {
+	font-style: normal; font-weight: normal;
+}
+.reset th {
+	font-style: normal; font-weight: normal;
+}
+.reset var {
+	font-style: normal; font-weight: normal;
+}
+.reset ol {
+	list-style: none;
+}
+.reset ul {
+	list-style: none;
+}
+.reset caption {
+	text-align: left;
+}
+.reset th {
+	text-align: left;
+}
+.reset h1 {
+	font-size: 100%; font-weight: normal;
+}
+.reset h2 {
+	font-size: 100%; font-weight: normal;
+}
+.reset h3 {
+	font-size: 100%; font-weight: normal;
+}
+.reset h4 {
+	font-size: 100%; font-weight: normal;
+}
+.reset h5 {
+	font-size: 100%; font-weight: normal;
+}
+.reset h6 {
+	font-size: 100%; font-weight: normal;
+}
+.reset q::before {
+	content: "";
+}
+.reset q::after {
+	content: "";
+}
+.reset abbr {
+	border: 0px currentColor; border-image: none;
+}
+.reset acronym {
+	border: 0px currentColor; border-image: none;
+}
+a:link {
+	color: rgb(0, 0, 255);
+}
+a:visited {
+	color: rgb(128, 0, 128);
+}
+a:hover {
+	color: rgb(255, 0, 0);
+}

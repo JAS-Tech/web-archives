@@ -1,0 +1,55 @@
+head{
+    text-align: left;
+    background-color: orange;
+    color: blue;
+}
+
+header{
+    text-align: left;
+    background-color: #FFB733;
+    color: blue;
+}
+body{
+text-align: left;
+background-color: orange;
+color: blue;
+}
+footer{
+text-align:center;
+background-color:#E69400
+}
+
+p {
+    text-align: center;
+    color: blue;
+} 
+
+
+h1 {
+text-align: center;
+color: blue;
+}
+
+
+h2 {
+text-align: center;
+color: blue;
+}
+
+
+h3 {
+text-align: left;
+color: blue;
+}
+
+
+h4 {
+text-align: center;
+color: blue;
+}
+
+
+h5 {
+text-align: left;
+color: blue;
+}

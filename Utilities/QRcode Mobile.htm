@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" type="image/ico" href="icon.png"/>
+<title>Steve's - Utilities - QR Code</title>
+
+<img id="myImage" src="Thumbnail_horizontal_QRC_1439684546485.png">
+
+<script>
+function isPortrait() {
+    return window.innerHeight > window.innerWidth;
+}
+function isLandscape() {
+    return (window.orientation === 90 || window.orientation === -90);
+}
+var image = document.getElementById('myImage');
+if (isPortrait()) {
+    image.src = "Thumbnail_vertical_QRC_1439684546485.png";
+}
+
+var image = document.getElementById('myImage');
+if (Landscape()) {
+    image.src = "Thumbnail_horizontal_QRC_1439684546485.png";
+}
+
+// NOT WORKING!
+/*
+var image = document.getElementById('myImage');
+else {
+    image.src = "Bit.ly%20Website.png"
+}
+*/
+</script>
+</html>

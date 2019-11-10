@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-AU">
+  <head>
+<meta name="google-site-verification" content="f4CW7K74v5x2ZMHQLYInIFLrvJX7b28vxifhFHwnwSE" />
+<meta charset="UTF-8">
+<meta name="description" content="JΛS Team Portal">
+<meta name="keywords" content="JΛS,Portal">
+<meta name="author" content="JΛS Team">
+<meta property="og:title" content="JΛS Portal">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://j.mp/jas-portal">
+<meta property="og:image" content="JAS-Transparent.gif">
+<meta property="og:site_name" content="JΛS Team Portal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+<head>
+<style>
+body {
+  background-color: orange;
+}
+h4 {
+text-align: left;
+color: blue;
+}
+</style>
+</head>
+
+
+<body>
+<h3>Maths Constants</h3>
+<h5>Math constants are E, PI, SQR2, SQR1_2, LN2, LN10, LOG2E, LOG10E</h5>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="constants"></p>
+
+<script>
+    function myFunction() {
+    document.getElementById("constants").innerHTML = 
+    Math.E + "<br>" +	
+    Math.PI + "<br>" +
+    Math.SQRT2 + "<br>" +
+    Math.SQRT1_2 + "<br>" +
+    Math.LN2 + "<br>" +
+    Math.LN10 + "<br>" +
+    Math.LOG2E + "<br>" +
+    Math.LOG10E + "<br>";
+}
+</script>
+<hr>
+<h3>Calculator Program Lite</h3>
+<a href="JAS%20Download%20Transparent.png"></a>
+
+<h4>Calculator Program Pro</h4>
+<h5>Exclusive to some people (10 &cent;)
+<h1></h1>
+<a href="JAS%20Download%20Transparent.png"></a>
+<hr>
+<h3>Roman Numeral Converter</h3>
+<noscript>Attention this Utilitiy uses JavaScript</noscript> 
+<script language="javascript">
+function convert(inputValue) {
+  var num = '', i = 0, n = 0;
+
+  while (inputValue.charAt(0) == ' ') {inputValue = inputValue.substr(1)};
+  if (inputValue.indexOf(' ') != -1) {inputValue = inputValue.substr(0, inputValue.indexOf(' '))}
+
+  if (inputValue == '') {
+ 
+  return '';
+  }
+  else {
+    if (isNaN(inputValue)) {
+      num = inputValue;
+      if (num == num.toLowerCase()) {
+        i = num.indexOf('u'); if (i != -1) {num = num.substr(0, i) + 'v' + num.substr(i + 1, num.length - i)};
+        if (num.substr(num.length - 2, 2) == 'ij') {num = num.substr(0, num.length - 2) + 'ii'};
+      }
+	  n = evalRoman(num);
+      if (n == -1) {
+	    alert(inputValue + ' is not a valid input');
+		msg = '';
+	  }
+      else {
+	    msg = n;
+	  }
+      }
+      else {
+      n = Math.round(parseFloat(inputValue));
+      if (n < 1 || n > 4999) {
+	    alert('Input must be in the range of 1 to 4999');
+		return '';
+	  }
+      else {
+        if (n != parseFloat(inputValue)) {alert(inputValue + ' will be rounded to ' + n)};
+        msg = converts(n);
+      }
+    }        
+  }
+  return msg;
+}
+
+function evalRoman(num) {
+  var i = 0, h = 0, n, t = 0, u = 0;
+
+  num = num.toUpperCase();
+  while (num.charAt(i) == 'M') {i ++};
+  n = i * 1000;
+
+  if (num.substr(i, 2) == 'CM') {h = 9; i += 2}
+    else if (num.substr(i, 1) == 'D') {h = 5; i ++}
+      else if (num.substr(i, 2) == 'CD') {h = 4; i += 2};
+  if (h == 0 || h == 5) {while (num.charAt(i) == 'C') {h ++; i ++}};
+  n += h * 100;
+
+  if (num.substr(i, 2) == 'XC') {t = 9; i += 2}
+    else if (num.substr(i, 1) == 'L') {t = 5; i ++}
+      else if (num.substr(i, 2) == 'XL') {t = 4; i += 2};
+  if (t == 0 || t == 5) {while (num.charAt(i) == 'X') {t ++; i ++}};
+  n += t * 10;
+
+  if (num.substr(i, 2) == 'IX') {u = 9; i += 2}
+    else if (num.substr(i, 1) == 'V') {u = 5; i ++}
+      else if (num.substr(i, 2) == 'IV') {u = 4; i += 2};
+  if (u == 0 || u == 5) {while (num.charAt(i) == 'I') {u ++; i ++}};
+  n += u;
+
+  if (!((num == convert1000s(n) + convert100s(n) + convert10s(n) + convert1s(n))
+    || (num == convert1000s(n) + convert100s(n) + convert10s(n) + convert1a(n))
+    || (num == convert1000s(n) + convert100s(n) + convert10a(n) + convert1s(n))
+    || (num == convert1000s(n) + convert100s(n) + convert10a(n) + convert1a(n))
+    || (num == convert1000s(n) + convert100a(n) + convert10s(n) + convert1s(n))
+    || (num == convert1000s(n) + convert100a(n) + convert10s(n) + convert1a(n))
+    || (num == convert1000s(n) + convert100a(n) + convert10a(n) + convert1s(n))
+    || (num == convert1000s(n) + convert100a(n) + convert10a(n) + convert1a(n)))) {n = -1}
+
+  return(n);
+}
+
+function converts(n) {
+  return (convert1000s(n) + convert100s(n) + convert10s(n) + convert1s(n))
+}
+
+function convert1000s(n) {
+  return ('MMMM'.substr(0, (Math.floor(n / 1000))));
+}
+
+function convert100s(h) {
+  var m = '', h = Math.floor((h % 1000) / 100);
+  if (h == 9) {m = 'CM'}
+    else if (h > 4) {m = 'DCCC'.substr(0, h - 4)}
+      else if (h == 4) {m = 'CD'}
+        else {m = 'CCC'.substr(0, h)};
+  return m;
+}
+
+function convert100a(h) {
+  var m = '', h = Math.floor((h % 1000) / 100);
+  if (h > 4) {m = 'DCCCC'.substr(0, h - 4)}
+    else {m = 'CCCC'.substr(0, h)};
+  return m;
+}
+
+function convert10s(t) {
+  var m = '', t = Math.floor((t % 100) / 10);
+  if (t == 9) {m = 'XC'}
+    else if (t > 4) {m = 'LXXX'.substr(0, t - 4)}
+      else if (t == 4) {m = 'XL'}
+        else {m = 'XXX'.substr(0, t)};
+  return m;
+}
+
+function convert10a(t) {
+  var m = '', t = Math.floor((t % 100) / 10);
+  if (t > 4) {m = 'LXXXX'.substr(0, t - 4)}
+    else {m = 'XXXX'.substr(0, t)};
+  return m;
+}
+
+function convert1s(u) {
+  var m = '', u = u % 10;
+  if (u == 9) {m = 'IX'}
+    else if (u > 4) {m = 'VIII'.substr(0, u - 4)}
+      else if (u == 4) {m = 'IV'}
+        else {m = 'III'.substr(0, u)};     
+  return m;
+}
+
+function convert1a(u) {
+  var m = '', u = u % 10;
+  if (u > 4) {m = 'VIIII'.substr(0, u - 4)}
+    else {m = 'IIII'.substr(0, u)};     
+  return m;
+}
+
+</script>
+
+<form onsubmit="this.box.value = convert(this.box.value); this.box.focus(); return false" name="f" abp="34" placeholder="Enter Number"><input style="FONT-FAMILY: courier" name="box" abp="35" placeholder="Enter Number"><br abp="36"><input type="submit" value="Convert" abp="37"> </form></H3>
+</body>
+</html>

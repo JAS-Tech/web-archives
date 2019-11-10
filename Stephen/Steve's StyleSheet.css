@@ -1,0 +1,19 @@
+  body {
+      cursor: url(https://260e065e6c5462196d286cded4d82d2b7bc36340.googledrive.com/host/0B8ckzvobF8YrX2NLdjRuVVFURlU/Orangey-Normal%20Select.cur), default; 
+      
+      background-color:orange
+  }
+  header {background-color:#FFB733}
+  footer {background-color:#E69400}
+  h1   {color:blue}
+  h2   {color:blue}
+  h3   {color:blue}
+  h4   {color:blue}
+  h5   {color:darkblue}
+  p    {color:darkblue}
+/* \/ For Later Use \/ */
+/*  a    {cursor: url(https://260e065e6c5462196d286cded4d82d2b7bc36340.googledrive.com/host/0B8ckzvobF8YrX2NLdjRuVVFURlU/Orangey-link%20Select%20L.cur), pointer ; }
+  button    {cursor: url(https://260e065e6c5462196d286cded4d82d2b7bc36340.googledrive.com/host/0B8ckzvobF8YrX2NLdjRuVVFURlU/Orangey-link%20Select%20L.cur), pointer ; }*/
+
+ .atagblue { a:link {color: blue;}a:visited {color: blue;}a:hover {color: blue;} style="color:blue" }
+ .atagdarkblue { LINK="darkblue" VLINK="darkblue" ALINK="darkblue" style="color:darkblue" }

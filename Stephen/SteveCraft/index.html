@@ -1,0 +1,239 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>SteveCraft</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="crafty.css">
+  <link rel="canonical" href=""><!-- http://goo.gl/wKFDI -->
+  <link rel=icon href="img/icon.png">
+<meta http-equiv="refresh" content="3600"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js"></script>
+  <style>
+    .font {font-family: "Minecraft Regular";}
+	#overlay {
+          visibility: hidden;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width:100%;
+          height:100%;
+          text-align:center;
+          z-index: 1000;
+		  background: url(img/bg.png);
+     }
+     #overlay div {
+          width:300px;
+          margin: 100px auto;
+          background-color: #fff;
+          border:1px solid #000;
+          padding:15px;
+          text-align:center;
+     }
+     body {
+          height:100%;
+          margin:0;
+          padding:0;
+     }
+  </style>
+  <style type="text/css">
+    .row { vertical-align: top; height:auto !important; }
+    .list {display:none; }
+    .show {display: none; }
+    .hide:target + .show {display: inline; }
+    .hide:target {display: none; }
+    .hide:target ~ .list {display:inline; }
+    @media print { .hide, .show { display: none; } }
+    .row1 { vertical-align: top; height:auto !important; }
+    .list1 {display:none; }
+    .show1 {display: none; }
+    .hide1:target + .show1 {display: inline; }
+    .hide1:target {display: none; }
+    .hide1:target ~ .list1 {display:inline; }
+    @media print { .hide1, .show1 { display: none; } }
+  </style>
+  <script>
+function overlay() {
+	el = document.getElementById("overlay");
+	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+}
+  </script>
+</head>
+<body>
+<!--[if IE]><div class="ie"><![endif]-->
+<div id="wrapper">
+  <header class="clearfix container">
+    <hgroup>
+      <h1><a href="index.html">SteveCraft</a></h1>
+      <h2>Steve Playz's Minecraft Server</h2>
+    </hgroup>
+    <nav role="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="http://stevecraft.serveminecraft.net:8123">Live Map</a></li>
+        <li><a href="http://www.planetminecraft.com/server/stevecraft-3463378/">Planet Minecraft</a></li>
+        <!--<li><a href="http://minecraftservers.org/server/276662">MinecraftServers.org</a></li>-->
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+  <aside role="complimentary" id="complimentary">
+      <div class="widget" id="status">
+        <h4 class="widget-title">Server Status</h4>
+        <div class="widget-content">
+          <h5 class="server-status">Server <span class="server-online">Checking...</span></h5>
+          <p>Last Checked: Just Now</p>
+		  <script src="https://mcapi.us/scripts/minecraft.js"></script>
+<script>
+  MinecraftAPI.getServerStatus('stevecraft.serveminecraft.net', {
+    port: 25565 // optional, only if you need a custom port
+  }, function (err, status) {
+    if (err) {
+      return document.querySelector('.server-status').innerHTML = 'Error loading status';
+    }
+
+    // you can change these to your own message!
+    document.querySelector('.server-online').innerHTML = status.online ? 'Online' : 'Offline';
+  });
+</script>
+        </div> <!-- .widget-content -->
+      </div> <!-- .widget -->
+      <!--<div class="widget">
+         <h4 class="widget-title">Current MOTD</h4><!.-- The Title not only tops the rounded corners of this widget, but rounds off the bottom of the last one, make sure this is here --.>
+         <div class="widget-content">
+           <p></p>
+         </div><!.-- .widget-content --.>
+      </div><!.-- .widget --.>-->
+      <div class="widget">
+        <h4 class="widget-title">Downloads</h4>
+        <div class="widget-content">
+          <ul>
+            <li><a href="http://tcpr.ca/files/craftbukkit/craftbukkit-1.8.8-R0.1-SNAPSHOT-latest.jar">CraftBukkit 1.8.8</a></li>
+            <li><a href="http://drdanick.com/downloads/dl.php?id=remotetoolkit&ver=r10_a15.3">RemoteToolKit</a></li>
+            <li><a href="http://get.bertware.net/detail/BukkitGUI">BukkitGUI</a>
+              <ul>
+                <li><a href="http://dev.bukkit.org/media/files/880/722/BukkitGUI.exe">BukkitGUI v1</a></li>
+                <li><a href="http://dev.bukkit.org/media/files/896/201/bukkitgui.exe">BukkitGUI v2 (beta)</a></li>
+              </ul>
+            </li>
+            <br>
+            <li><a href="https://www.spigotmc.org/members/steve8playz.60950/">My Plugins</a>
+              <ul>
+                <li><a href="https://www.spigotmc.org/resources/serveroptions-for-bukkitgui.12580/">ServerOptions</a>
+				<ul>
+				<li><a href='https://www.spigotmc.org/resources/serveroptions-for-bukkitgui.12580/download?version=46120'>Download</a></li>
+				</ul>
+				</li>
+                <li><a href="https://www.spigotmc.org/resources/serverwebsite.13007/">ServerWebsite</a>
+				<ul>
+				<li><a href='https://www.spigotmc.org/resources/serverwebsite.13007/download?version=47696'>Download</a></li>
+				</ul></li>
+                <li><a href="https://www.spigotmc.org/resources/steves-random-plugins.13070/">Steve's Random Plugins</a>
+				<ul>
+				<li><a href='https://www.spigotmc.org/resources/steves-random-plugins.13070/download?version=47967'>Download</a></li>
+				</ul></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- .widget-content -->
+      </div><!-- .widget -->
+      <div class="widget" id="news">
+        <h4 class="widget-title">Recent News</h4>
+        <div class="widget-content">
+          <ul>
+            <li>
+              <a href="#" class="item-title">Added Permissions & Upgraded the Player Count & Updated PlotMe to PlotSquared</a>
+              <div class="item-pubdate">15 October 2015</div>
+            </li>
+            <li>
+              <a href="#" class="item-title">New Website up and running!</a>
+              <div class="item-pubdate">5 October 2015</div>
+            </li>
+            <li>
+              <a href="#" class="item-title">Updated My Server!</a>
+              <div class="item-pubdate">Mid-2015</div>
+            </li>
+            <li>
+              <a href="#" class="item-title">Made My First Server</a>
+              <div class="item-pubdate">A Long Time Ago...</div>
+            </li>
+          </ul>
+        </div><!-- .widget-content -->
+      </div><!-- .widget -->
+      <div class="widget">
+        <h4 class="widget-title"><small>Give me an Internet</small></h4>
+        <div class="widget-content">
+          <p style="text-align: center;"><a href='http://internetometer.com/give/44939'><img width="95%" src='http://internetometer.com/image/44939.png'/></a></p>
+        </div><!-- .widget-content -->
+      </div><!-- .widget -->
+  </aside><!-- complimentary -->
+  <div id="content-before"><!-- Should be empty --></div>
+  <div role="main" id="main">
+    <article>
+      <h1 style="color: #951A13;">Server Info</h1>
+      <h2 style="color: #951A13;"><small><small>stevecraft.serveminecraft.net</small></small></h2>
+      <!--<a href="minecraft://stevecraft.serveminecraft.net" class="button">Play Server</a><br>-->
+      <h4>Description</h4>
+      <p>This server was Created by the YouTuber <a href="http://www.youtube.com/channel/UCnnC-n8k_Yz_FpDlhL9YOGg">Steve Playz</a><br>My server is not yet 24/7 yet, if it is not on and you want me to turn it on please contact me <small>(In the Comments Section on Planet Minecraft)</small>.<br>This server is 1.8.8 with an Optional Texturepack that should Install Automatically and there is also a REQUIRED Texture Pack<br><small>Optional Texture Pack: <a href="https://www.dropbox.com/s/fbjw95m7i3xfpb3/SteveCraft%20Optional%20Texture%20Pack.zip?dl=1">Click Here to Download</a><br>Required Texture Pack: <a href="https://www.dropbox.com/s/9a9gu3jem6ilo73/SteveCraft%20Required%20Texture%20Pack.zip?dl=1">Click Here to Download</a></small></p>
+      <h4>More Info</h4>
+      <p><strong><big>IP: SteveCraft.serveminecraft.net</big></strong></p><p><big>Version</big><br><a title="Click to Download" href="http://tcpr.ca/files/craftbukkit/craftbukkit-1.8.8-R0.1-SNAPSHOT-latest.jar">CraftBukkit 1.8.8</a><br><big>Players</big><br><span class="server-players">0</span>/<span class="server-maxplayers">0</span><br><small><big>Last Online</big><br><span id="server-lastonline" class="server-lastonline">Loading...</span><br><small>Attention: This is Epoch Time not Normal Time.</small></small></p><p><big>Known Errors & Bugs</big><br><ul class="list-unstyled"><li>The Ping Saying "Client out of date!" (It Still Works!)</li></ul>Please Report Bugs in the Comments Section on Planet Minecraft</p><p><big>To Do</big><br><ul class="list-unstyled"><li><s>Stop Players From Taking Lapis From Enchanting Tables</s> (Just Got rid of the Plugin :))</li></ul></p><script>
+  MinecraftAPI.getServerStatus('stevecraft.serveminecraft.net', {
+    port: 25565 // optional, only if you need a custom port
+  }, function (err, status) {
+    if (err) {
+      return document.querySelector('.server-status').innerHTML = 'Error loading status';
+    }
+
+    // you can change these to your own message!
+    document.querySelector('.server-players').innerHTML = status.players.now;
+    document.querySelector('.server-maxplayers').innerHTML = status.players.max;
+    document.querySelector('.server-lastonline').innerHTML = status.last_online;
+  });
+</script>
+      <h4>Plugins</h4><small>Updated: 15/11/15</small>
+      <!-- Get Plugins at https://dinnerbone.com/minecraft/tools/status/ -->
+      <p><ul class="list-unstyled"><li>  
+	  <div class="row">
+      <a href="#hide" class="hide" id="hide">SteveCraft-PluginPack</a>
+      <a href="#show" class="show" id="show">SteveCraft-PluginPack</a>
+      <div class="list">
+	  <ul class="list-unstyled">
+<!-- ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">CleanroomGenerator 1.0.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">EasyElevator 1.2</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">UnbreakingAnvils 1.0.2</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">RemoteToolkitPlugin R10_A15.3</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">BarAPI 3.3</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">PerWorldPlugins 1.3.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">DisableMe 1.3</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">AdminColorChat 1.1</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Lockette 1.8.20</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">AceCommandSign 2.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">OwnerJoin 1.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Admin-Chat 1.3.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">MobHealth 9.1.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">CommandNPCs 1.3.2</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">NoobResponse 3.02</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">AutoEmoji 2.0.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Simple-AutoSave 0.2.2</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">AntiLagg 1.1.5</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">dynmap 2.2-1118</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">VoteRoulette 3.2.1</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">WorldEdit 6.1,no_git_id</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">NoSwear 6.2</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Essentials TeamCity</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">WorldTP 1.0-SteveCraft</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">BypassSlots 1.2</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">KickStart 0.7</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">uSkyBlock 1.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Chairs 4.6</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">RemoteBukkit 4.0.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Votifier 1.9</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">HeadBanner 4.2</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">ProtocolLib 3.6.4</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">AutoPickup 3.6</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">NameTags 3.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">EssentialsChat TeamCity</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">PermissionsEx 1.23.3</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">PluginFake 1.9</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">TreeAssist 5.8.89</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">RedstoneClockPreventer2 2.3.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">ActionAnnouncer 1.7</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">ServerListPlus 3.4</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Vault 1.5.6-b49</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">PlayerJoinCommands 1.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">MassiveCore 2.8.2</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">PerWorldInventory 1.5.8</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">PlotSquared 3.2.24</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">WorldGuard 6.0.0-beta-05.1569-</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Factions 2.8.2</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">EssentialsProtect TeamCity</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">EssentialsAntiBuild TeamCity</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">ServerSigns 4.2.1-DEV</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">VoteLink 5.1</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">EssentialsSpawn TeamCity</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">JSONAPI 5.6.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">TitleManager 1.5.11</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">PlotMe 0.16.3</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Multiverse-Core 2.5-b699</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Citizens 2.0.16-SNAPSHOT (build 1267)</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Shopkeepers 1.65</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Plot2Dynmap 3.2.0</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Parkour 3.7</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">Multiverse-Portals 2.5-b725</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">ArmorStandTools 2.06</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">HolographicDisplays 2.1.10</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">CommandNPC 1.7.2</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">SuperChat 2.1</li><!-- end ngRepeat: plugin in server.version.plugins --><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">TouchscreenHolograms 1.3</li><!-- end ngRepeat: plugin in server.version.plugins -->
+</ul>
+	  </div></div></li>
+	  <li><a href="https://www.spigotmc.org/members/steve8playz.60950/" title="This will expand one day...">Steves-Plugins</a><!--<div class="row1">
+      <a href="#hide1" class="hide1" id="hide1">Steves-Plugins</a>
+      <a href="#show1" class="show1" id="show1">Steves-Plugins</a>
+      <div class="list1">
+	  <!-- end ngRepeat: plugin in server.version.plugins -.-><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">ServerWebsite 4.1</li><!-- end ngRepeat: plugin in server.version.plugins -.-><li class="ng-binding ng-scope" ng-repeat="plugin in server.version.plugins">ServerOptions 2.5</li>-.->
+	  </div></div>--></li><li>JAS-Plugin</li></p>
+    </article>
+	<div id="overlay">
+    <article style="background: url(img/sprite-crafty.png) repeat-y; color: #000; margin-bottom: 70px; position: relative; padding: 50px 70px 88px; z-index:1;"><!-- Example Blog Post Format -->
+      <h3 class="article-title"><a>Info for ServerOptions</a></h3>
+      <div class="article-content">
+	  <p>Info</p>
+      </div>
+    </article>
+	</div>
+  </div><!-- main -->
+  <div id="content-after"><!-- Should be empty --></div>
+  </div><!-- .container -->
+  <footer>
+    <p>This template was created by <a href="http://d3x.co" target="_blank">D3X Solutions</a> and is licensed under <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GNU GPL 2</a>. Download The Template <a href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-tools/1263914-free-stunning-minecraft-html-template-9-july-2012" target="_blank">Click Here</a></p>
+  </footer>
+</div><!-- #wrapper -->
+
+<!--[if IE]></div><![endif]-->
+  <!--Place your JavaScript down here-->
+  <script src="js/fontloader.js"></script><!-- Load custom online fonts http://goo.gl/Deqf0 -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</body>
+</html>
